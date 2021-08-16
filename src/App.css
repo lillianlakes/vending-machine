@@ -28,11 +28,36 @@
   color: #61dafb;
 }
 
+.routes {
+  background-image: url("https://i.ibb.co/YtJ22Kv/park-background.png");
+  background-size: cover;
+}
+
+h2 {
+  padding: 25px;
+}
+
+.image {
+  height: 400px;
+  margin: 80px;
+}
+
+.food {
+  position: relative;
+  transform: rotate(-60deg);
+  -webkit-animation:spin 3s linear infinite;
+  -moz-animation:spin 3s linear infinite;
+  animation:spin 3s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(60deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(60deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(60deg); transform:rotate(60deg); } }
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(60deg);
   }
 }
